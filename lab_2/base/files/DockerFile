@@ -1,0 +1,7 @@
+FROM golang:1.21
+COPY scr scr
+#COPY go.mod .
+WORKDIR scr
+RUN go mod tidy
+#RUN go built .
+CMD go run .
