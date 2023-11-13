@@ -11,7 +11,7 @@
 
 ## Основная часть
 
-1. Устанавливаем инструменты для работы с Kubernetes `kubectl`` с помощью команды:
+1. Устанавливаем инструменты для работы с Kubernetes `kubectl` с помощью команды:
 ```
 curl -LO https://dl.k8s.io/release/v1.28.3/bin/windows/amd64/kubectl.exe
 ```
