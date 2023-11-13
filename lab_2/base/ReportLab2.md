@@ -66,7 +66,7 @@ kubectl create -f ./web.yml
 kubectl get deployments 
 kubectl get pods
 ```
-<img src="#"/>
+<img src="#" alt="image"/>
 
 4. Создаем файл для сервиса ser.yml со следующим содержимым:
 
@@ -99,7 +99,7 @@ kubectl create -f ./ser.yml
 ```
 kubectl get service
 ```
-<img src="#"/>
+<img src="#" alt="image"/>
 
 5. Проверим работу сервиса.
 
@@ -113,7 +113,6 @@ kubectl get service
 Переходим по адресу и в браузере видим ответ от сервера.
 
 <img src="./img/pic5.jpg"/>
-
 
 6. Вывод
 
