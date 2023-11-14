@@ -67,7 +67,7 @@ kubectl create -f ./web.yml
 kubectl get deployments 
 kubectl get pods
 ```
-<img src="./img/img_3.jpg" width='350px'/>
+<img src="./img/img_3.jpg" width='500px'/>
 
 4. Создаем файл для сервиса ser.yml со следующим содержимым:
 
@@ -103,11 +103,11 @@ kubectl create -f ./ser.yml
 ```
 ./minikube.exe service ser
 ```
-<img src="./img/img_2.jpg" width='500px'/>
+<img src="./img/img_2.jpg" width='700px'/>
 
 Переходим по адресу и в браузере видим ответ от сервера.
 
-<img src="./img/pic5.jpg" width='500px'/>
+<img src="./img/pic5.jpg" width='700px'/>
 
 6. Вывод
 
