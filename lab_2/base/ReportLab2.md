@@ -32,26 +32,27 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: webserver
+  name: web
   labels:
-    app: webserver
+    app: web
 
 spec:
   selector:
     matchLabels:
-      app: webserver
+      app: web
 
   replicas: 2
 
   template:
     metadata:
-      name: webserver
+      name: web
       labels:
-        app: webserver
+        app: web
     spec:
       containers:
-        - name: webserver
-          image: web-server
+        - name: web
+          image: valeriya/web-server
+
 ```
 В файле указан kind - Deployment. Он отвечает за развертывание подов, следит за их состоянием. Параметр replicas отвечает за количетсво экземпляров объекта. В нашем случае их будет 2.
 
@@ -75,16 +76,16 @@ apiVersion: v1
 kind: Service
 
 metadata:
-  name: service
+  name: ser
 
 spec:
   type: LoadBalancer
   ports:
     - targetPort: 443
       port: 443
-      nodePort: 32115
+      nodePort: 32200
   selector:
-    app: webserver
+    app: web
 ```
 
 В качестве сервиса был выбран LoadBalancer. Он обеспечивает баланс нагрузки для сервиса.
