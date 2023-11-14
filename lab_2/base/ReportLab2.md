@@ -23,7 +23,7 @@ curl -LO https://dl.k8s.io/release/v1.28.3/bin/windows/amd64/kubectl.exe
 ```
 minikube start --driver=docker
 ```
-<img src="./img/pic1.jpg"/>
+<img src="./img/img_1.jpg"/>
 
 3. Создадим файл web.yml:
 
@@ -67,7 +67,7 @@ kubectl create -f ./web.yml
 kubectl get deployments 
 kubectl get pods
 ```
-<img src="#" alt="image"/>
+<img src="img_3.png" alt="image"/>
 
 4. Создаем файл для сервиса ser.yml со следующим содержимым:
 
@@ -95,12 +95,6 @@ spec:
 ```
 kubectl create -f ./ser.yml
 ```
-Для получения сервисов выполним команду:
-
-```
-kubectl get service
-```
-<img src="#" alt="image"/>
 
 5. Проверим работу сервиса.
 
@@ -109,7 +103,7 @@ kubectl get service
 ```
 ./minikube.exe service ser
 ```
-<img src="./img/pic2.jpg"/>
+<img src="./img/img_2.jpg"/>
 
 Переходим по адресу и в браузере видим ответ от сервера.
 
