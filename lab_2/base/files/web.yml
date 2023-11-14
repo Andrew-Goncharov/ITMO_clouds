@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 
 metadata:
-  name: webserver
+  name: web
   labels:
-    app: webserver
+    app: web
 
 spec:
   selector:
     matchLabels:
-      app: webserver
+      app: web
 
   replicas: 2
 
   template:
     metadata:
-      name: webserver
+      name: web
       labels:
-        app: webserver
+        app: web
     spec:
       containers:
-        - name: webserver
-          image: web-server
+        - name: web
+          image: valeriya/web-server
