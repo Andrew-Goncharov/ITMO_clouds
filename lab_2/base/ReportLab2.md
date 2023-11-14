@@ -67,7 +67,7 @@ kubectl create -f ./web.yml
 kubectl get deployments 
 kubectl get pods
 ```
-<img src="img_3.jpg" alt="image"/>
+<img src="./img/img_3.jpg" alt="image"/>
 
 4. Создаем файл для сервиса ser.yml со следующим содержимым:
 
