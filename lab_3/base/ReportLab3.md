@@ -87,5 +87,15 @@ on:
 
 <img width="273" alt="image" src="https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/22a62829-01e5-47e8-869f-0186c66b9126">
 
+Также выведем содержимое фала builder.log: 
+
+<img width="559" alt="image" src="https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/928783aa-858e-4f5f-8653-cf1ea48c9db1">
+
+
 ## Вывод
 В результате выполнения данной лабораторной работы была реализована автоматическая сборка докер образа после пуша в репозиторий и результат его сборки сохраняется на сервер. Удалось настроить CI/CD с помощью GitHub Actions и протестировать работу.
+
+**Если при проверке заметите, что последние билды упали, то это я что-то сломала. На 16 и 17 запуске все было ок и отлично сработало: 
+
+![image](https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/7ccd3229-0822-4695-b179-c6ed0c022db7)
+
