@@ -13,10 +13,10 @@ jobs:
 
       - uses: appleboy/scp-action@v0.1.4
         with:
-          host: 95.30.12.192
-          username: valery
-          password: vjhsdg#R4r873tr!#&(*ERT
+          host: ${{ secrets.ADDRESS }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASS }}
           key: ${{ secrets.SSH_KEY }}
           port: 22
           source: "builder.log"
-          target: /home/valery
+          target: ${{ secrets.PATH }}
