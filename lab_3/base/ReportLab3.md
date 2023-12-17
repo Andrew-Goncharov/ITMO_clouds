@@ -10,7 +10,7 @@
 Сделать, чтобы после пуша в репозиторий автоматически собирался докер образ и результат его сборки сохранялся на сервер.
 
 ## Основная часть
-Перед началом выполнения работы воспользуемся возможностями GitHub Action Secrets, в котором сохраним переменные ADDRESS, PASS, PATH.
+Перед началом выполнения работы воспользуемся возможностями GitHub Action Secrets, в котором сохраним переменные ADDRESS, PASS, PATH, USERNAME, SSH_KEY.
 
 ![image](https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/886b0577-6565-4ee1-9ecb-97a29633fadf)
 
@@ -40,6 +40,7 @@ jobs:
           host: ${{ secrets.ADDRESS }}
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASS }}
+          key: ${{ secrets.SSH_KEY }}
           port: 22
           source: "builder.log"
           target: ${{ secrets.PATH }}
@@ -78,3 +79,11 @@ on:
 В данном случае: адрес и порт хоста, логин и пароль пользователя, файлы для передачи и путь сохранения.
 
 #### 2. Тестирование
+Сделаем пуш в репозиторий. Видим успешный билд: 
+
+<img width="956" alt="image_2023-12-17_19-54-13" src="https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/1d7e2011-4c74-47cb-bdbf-d6a58477e944">
+
+Подключимся к серверу и проверим наличие файла build.log:
+
+<img width="273" alt="image" src="https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/22a62829-01e5-47e8-869f-0186c66b9126">
+
