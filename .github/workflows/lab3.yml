@@ -15,7 +15,7 @@ jobs:
         with:
           host: 95.30.12.192
           username: valery
-          password: MyPass2023
+          password: vjhsdg#R4r873tr!#&(*ERT
           key: ${{ secrets.SSH_KEY }}
           port: 22
           source: "builder.log"
