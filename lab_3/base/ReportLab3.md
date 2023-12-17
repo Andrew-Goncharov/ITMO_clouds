@@ -33,7 +33,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - run: docker build . > builder.log 2>&1
+      - run: docker build ./lab_3/base > builder.log 2>&1
 
       - uses: appleboy/scp-action@v0.1.4
         with:
@@ -58,7 +58,7 @@ on:
 
 `- uses: actions/checkout@master` - загружает виртуалку в репозиторий.
 
-`- run: docker build . > builder.log 2>&1` - сборка с логированием в файл builder.log. `2>&1` это уровень логирования.
+`- run: docker build ./lab_3/base > builder.log 2>&1` - сборка с логированием в файл builder.log. `2>&1` это уровень логирования.
 
 `- uses: appleboy/scp-action@v0.1.4` - далее мы используем проект scp-action который позволяет отправить файлы по ssh.
 
