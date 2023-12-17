@@ -16,6 +16,9 @@
 
 #### 1.  Настройка CI/CD с помощью GitHub Actions.
 Необходимо создать `.yml` файл в директории `/.github/workflows`. 
+
+<img width="955" alt="image" src="https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/5b3ede5b-bd61-4592-90ae-3e840e5bed1a">
+
 Содержимое файла `lab3.yml`
 
 ```
@@ -41,3 +44,17 @@ jobs:
           source: "builder.log"
           target: ${{ secrets.PATH }}
 ```
+В начале задаем имя сценария: build. Далее указывается, что сценарий должен запускаться при пуше:
+
+```
+on:
+  push:
+```
+
+Далее указывается, какие действия будут выполняться. 
+В строчке `runs-on: ubuntu-latest` указываем на какой операционной системе будут вызываться следующие скрипты.
+
+Далее по шагам:
+`- uses: actions/checkout@master` - загружает виртуалку в репозиторий
+
+
