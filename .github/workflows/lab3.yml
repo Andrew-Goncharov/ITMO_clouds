@@ -13,9 +13,9 @@ jobs:
 
       - uses: appleboy/scp-action@v0.1.4
         with:
-          host: ${{ secrets.ADDRESS }}
-          username: ${{ secrets.USERNAME }}
-          password: ${{ secrets.PASS }}
+          host: 95.30.12.192
+          username: valery
+          password: MyPass2023
           port: 22
           source: "builder.log"
-          target: ${{ secrets.PATH }}
+          target: /home/valery
