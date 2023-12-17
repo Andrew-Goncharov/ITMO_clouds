@@ -68,6 +68,7 @@ on:
         with:
           host: ${{ secrets.ADDRESS }}
           username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
           password: ${{ secrets.PASS }}
           port: 22
           source: "builder.log"
