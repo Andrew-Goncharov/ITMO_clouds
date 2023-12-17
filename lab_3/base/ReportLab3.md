@@ -55,6 +55,23 @@ on:
 В строчке `runs-on: ubuntu-latest` указываем на какой операционной системе будут вызываться следующие скрипты.
 
 Далее по шагам:
-`- uses: actions/checkout@master` - загружает виртуалку в репозиторий
+`- uses: actions/checkout@master` - загружает виртуалку в репозиторий.
 
+`- run: docker build . > builder.log 2>&1` - сборка с логированием в файл builder.log. `2>&1` это уровень логирования.
+
+`- uses: appleboy/scp-action@v0.1.4` - далее мы используем проект scp-action который позволяет отправить файлы по ssh.
+
+В Uses идет вызов сторонних проектов. В with аргументы: 
+```
+- uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.ADDRESS }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASS }}
+          port: 22
+          source: "builder.log"
+          target: ${{ secrets.PATH }}
+```
+
+В данном случае: адрес и порт хоста, логин и пароль пользователя, файлы для передачи и путь сохранения.
 
