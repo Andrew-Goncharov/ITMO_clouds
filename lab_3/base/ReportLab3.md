@@ -12,7 +12,7 @@
 ## Основная часть
 Перед началом выполнения работы воспользуемся возможностями GitHub Action Secrets, в котором сохраним переменные ADDRESS, PASS, PATH.
 
-![image](https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/a454c71c-1872-4fee-bd3c-5166b211b2b4)
+![image](https://github.com/Andrew-Goncharov/ITMO_clouds/assets/64967406/886b0577-6565-4ee1-9ecb-97a29633fadf)
 
 #### 1.  Настройка CI/CD с помощью GitHub Actions.
 Необходимо создать `.yml` файл в директории `/.github/workflows`. 
