@@ -16,6 +16,7 @@ jobs:
           host: 95.30.12.192
           username: valery
           password: MyPass2023
+          key: ${{ secrets.SSH_KEY }}
           port: 22
           source: "builder.log"
           target: /home/valery
