@@ -28,19 +28,19 @@ CREATE TABLE IF NOT EXISTS notes (
 
 Применение миграций:
 
-<img src='./images/img_1.png' width='1000px'/>
+<img src='./images/img_1.png' width='800px'/>
 
 <img src='./images/img_2.png' width='300px'/>
 
 Добавление данных через командную строку:
 
-<img src='./images/img_3.png' width='1000px'/>
+<img src='./images/img_3.png' width='800px'/>
 
 <img src='./images/img_4.png' width='300px'/>
 
 Добавление данных с помощью REST API:
 
-<img src='./images/img_5.png' width='1000px'/>
+<img src='./images/img_5.png' width='800px'/>
 
 <img src='./images/img_6.png' width='300px'/>
 
